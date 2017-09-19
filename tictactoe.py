@@ -2,14 +2,13 @@
 import tictactoe_functions
 import random
 
-
 # skapar ett spelplan med storleken size
 # och tecknet sign
 def createGamePlan(size, sign):
   gPlan = []
   row = [sign]*size
   for i in range(size):
-    gPlan.append(row)
+    gPlan.append(row[:])
   return gPlan
 
 # Skriver ut spelplanet gamePlan 
@@ -35,8 +34,9 @@ def updateGamePlan(row,col,gamePlan,sign):
 # Returnerar True om det finns en ledig ruta
 # i spelplanet gamePlan och False annars
 def anyVacantBoxes(gamePlan,EMPTY):
-  if EMPTY in gamePlan[0]:
-    return True
+  for i in range(0,SIZE)
+    if EMPTY in gamePlan[i]:
+      return True
   return False
 
 # Frågar användaren efter rad och kolumn, funktionen
