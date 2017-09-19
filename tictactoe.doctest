@@ -1,0 +1,29 @@
+>>> # Här importerar vi hela koden i filen tictactoe
+>>> from tictactoe import *
+>>>
+>>> # Här skapr vi en 3x3 spelplan
+>>> p = createGamePlan(3, "-")
+>>>
+>>> # Här kontrollerar vi om funktionen showGamePlan
+>>> # skriver ut enligt vad vi förväntar den ska skriva ut
+>>> showGamePlan(p)
+  0 1 2 
+0 - - - 
+1 - - - 
+2 - - - 
+>>> # Här uppdaterar vi spelplanens cell i rad 1 och
+>>> # kolumn 1 med tecknet Xoch det ska returnerar
+>>> # True om uppdateringen kunde genomföras
+>>> updateGamePlan(1,1,p,"X")
+True
+>>> 
+>>> # Här kontrollerar vi om spelplanen ser ut som det
+>>> # ska efter uppdateringen av cell i rad 1 och kolumn 1
+>>> showGamePlan(p)
+  0 1 2 
+0 - - - 
+1 - * - 
+2 - - - 
+
+>>> # Här nedan ska ni fortsätta skriva flera tester helst innan
+>>> # Ni åtgärdar felen
